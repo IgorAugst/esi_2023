@@ -9,6 +9,8 @@ jobs:
   rspec:
     name: RSpec
     runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
     steps:
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1

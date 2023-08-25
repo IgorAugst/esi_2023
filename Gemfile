@@ -64,9 +64,10 @@ group :development do
   # gem "spring"
 end
 
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+group :development, :test do
+  gem "byebug", platforms: %i[mri mingw x64_mingw]
   gem "capybara"
-  gem "selenium-webdriver"
-  gem "webdrivers"
+  gem "factory_bot_rails"
+  gem "rspec"
+  gem "rspec-rails"
 end
