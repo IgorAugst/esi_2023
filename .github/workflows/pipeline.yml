@@ -1,0 +1,22 @@
+name: Pipeline github actions
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  rspec:
+    name: RSpec
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 3.2.2
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+      - name: Run RSpec
+        run: bundle exec rspec
