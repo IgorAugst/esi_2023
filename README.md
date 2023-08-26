@@ -1,4 +1,5 @@
 ![Pipeline](https://github.com/IgorAugst/esi_2023/actions/workflows/pipeline.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/IgorAugst/esi_2023/badge.svg?branch=main)](https://coveralls.io/github/IgorAugst/esi_2023?branch=main)
 
 
 # README
