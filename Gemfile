@@ -27,6 +27,10 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem 'coveralls_reborn'
+
+gem 'simplecov-lcov', '~> 0.8.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -71,4 +75,5 @@ group :development, :test do
   gem "factory_bot_rails"
   gem "rspec"
   gem "rspec-rails"
+  gem 'simplecov-lcov', '~> 0.8.0'
 end
