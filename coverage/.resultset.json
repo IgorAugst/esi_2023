@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/igor/code/ruby/project/app/channels/application_cable/channel.rb": {
+      "/home/igor/Code/ruby/esi_2023/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -11,7 +11,7 @@
         "branches": {
         }
       },
-      "/home/igor/code/ruby/project/app/channels/application_cable/connection.rb": {
+      "/home/igor/Code/ruby/esi_2023/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -21,7 +21,7 @@
         "branches": {
         }
       },
-      "/home/igor/code/ruby/project/app/controllers/application_controller.rb": {
+      "/home/igor/Code/ruby/esi_2023/app/controllers/application_controller.rb": {
         "lines": [
           0,
           0
@@ -29,7 +29,7 @@
         "branches": {
         }
       },
-      "/home/igor/code/ruby/project/app/helpers/application_helper.rb": {
+      "/home/igor/Code/ruby/esi_2023/app/helpers/application_helper.rb": {
         "lines": [
           0,
           0
@@ -37,7 +37,7 @@
         "branches": {
         }
       },
-      "/home/igor/code/ruby/project/app/jobs/application_job.rb": {
+      "/home/igor/Code/ruby/esi_2023/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -50,7 +50,7 @@
         "branches": {
         }
       },
-      "/home/igor/code/ruby/project/app/mailers/application_mailer.rb": {
+      "/home/igor/Code/ruby/esi_2023/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -60,7 +60,7 @@
         "branches": {
         }
       },
-      "/home/igor/code/ruby/project/app/models/application_record.rb": {
+      "/home/igor/Code/ruby/esi_2023/app/models/application_record.rb": {
         "lines": [
           0,
           0,
@@ -70,6 +70,6 @@
         }
       }
     },
-    "timestamp": 1693094872
+    "timestamp": 1693159573
   }
 }
