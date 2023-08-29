@@ -11,4 +11,4 @@ development:
   pool: 5
   username: postgres
   password: mysecretpassword
-  host: localhost
+  host: database
