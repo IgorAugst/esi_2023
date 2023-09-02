@@ -11,4 +11,13 @@ development:
   pool: 5
   username: postgres
   password: mysecretpassword
-  host: localhost
+  host: database
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: esi2023_database
+  pool: 5
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  host: <%= ENV['DATABASE_HOST'] %>
