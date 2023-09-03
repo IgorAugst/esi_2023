@@ -32,13 +32,26 @@ jobs:
     needs: [rspec]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Build docker image
-        run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/esi_2023:latest --platform=linux/arm/v8 .
-      - name: Docker hub login
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      -
+        name: Login to DockerHub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
-      - name: Push to docker hub
-        run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/esi_2023:latest
+      -
+        name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/esi_2023:latest
