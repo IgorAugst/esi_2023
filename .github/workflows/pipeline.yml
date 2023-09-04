@@ -57,3 +57,11 @@ jobs:
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/esi_2023:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+  deploy:
+    environment: production
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        run: curl '${{secrets.DEPLOY_URL }}?token=${{ secrets.DEPLOY_TOKEN }}'
